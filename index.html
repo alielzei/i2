@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Intégration Immédiate</title>
+	<meta http-equiv="Content-Type" content=" text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="libraries/katex/katex.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Cabin|Heebo" rel="stylesheet">
+</head>
+<body>
+
+	<div class="main-container">
+
+		<div id="expo-container">
+			<div class="action-container">
+				<span id="close">&times;</span>
+				<div id="expo"></div>
+			</div>
+			
+		</div>
+
+		<div class="top-bar">
+			<div class="project-logo">
+				<img src="logo.svg">
+			</div>
+			<div class="project-name">
+				Intégration Immédiate
+			</div>
+		</div>
+
+		<div id="app-container">
+
+			<div class="list-container">
+				<h2>Choisir une fonction</h2>
+				<ul id="function-list"></ul>
+			</div>
+
+			<div class="function-view">
+
+				<span id="back">Back</span>
+
+				<h1 id="function-form"></h1>
+				<div id="prim-parms" class="parms-container"></div>
+				<div class="align-center">
+					<button id="prim-btn" class="action-btn">Chercher la primitive</button>
+					<button id="formule" class="action-btn">Formule?</button>
+				</div>
+				<p id="primitive-form" class="result"></p>
+
+				<div id="integration">
+
+					<div class="parms-container inline">
+						<div class="parm">
+							<p class="parm-label">a</p>
+							<input id="borne-a" value="0" class="parm-value">
+						</div>
+						<div class="parm" style="margin-left: -4px;">
+							<p class="parm-label">b</p>
+							<input id="borne-b" value="0" class="parm-value">
+						</div>
+					</div>
+					
+					<div class="align-center">
+						<button id="int-btn" class="action-btn">Intégrer</button>
+					</div>
+					<p id="integrale" class="result"></p>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<script src="libraries/jquery.js"></script>
+	<script src="libraries/math.min.js"></script>
+	<script src="libraries/algebrite.js"></script>
+	<script src="libraries/katex/katex.min.js"></script>
+	<script src="app.js"></script>
+	
+</body>
+</html>
